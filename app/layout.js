@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "The Blue PEacock",
+  title: "The Blue Peacock",
   description: "Soluciones tecnológicas para pequeñas empresas",
 };
 
