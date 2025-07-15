@@ -59,37 +59,41 @@ export default function Home() {
   <h2 className="text-2xl font-semibold mb-4">Contacto</h2>
   <p className="text-gray-700 mb-4">¿Te interesa trabajar conmigo? Rellena el siguiente formulario:</p>
   <form
-    action="https://formspree.io/f/xwpqklvo"
-    method="POST"
-    className="space-y-4 max-w-xl"
+  action="https://formspree.io/f/xwpqklvo"
+  method="POST"
+  className="space-y-4 max-w-xl"
+>
+  {/* Redirección automática después de enviar */}
+  <input type="hidden" name="_redirect" value="https://datapyme-web.vercel.app" />
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Tu nombre"
+    required
+    className="w-full p-2 border rounded"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Tu correo"
+    required
+    className="w-full p-2 border rounded"
+  />
+  <textarea
+    name="message"
+    placeholder="Tu mensaje"
+    required
+    className="w-full p-2 border rounded h-32"
+  />
+  <button
+    type="submit"
+    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
   >
-    <input
-      type="text"
-      name="name"
-      placeholder="Tu nombre"
-      required
-      className="w-full p-2 border rounded"
-    />
-    <input
-      type="email"
-      name="email"
-      placeholder="Tu correo"
-      required
-      className="w-full p-2 border rounded"
-    />
-    <textarea
-      name="message"
-      placeholder="Tu mensaje"
-      required
-      className="w-full p-2 border rounded h-32"
-    />
-    <button
-      type="submit"
-      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-    >
-      Enviar mensaje
-    </button>
-  </form>
+    Enviar mensaje
+  </button>
+</form>
+
 </section>
 
 
