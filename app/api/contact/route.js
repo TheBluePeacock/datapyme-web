@@ -27,7 +27,9 @@ export async function POST(req) {
 
     return Response.json({ message: 'Datos guardados correctamente.' });
   } catch (error) {
-    console.error(error);
-    return Response.json({ message: 'Error en el servidor.' }, { status: 500 });
-  }
+  console.error('ERROR EN BACKEND:', error.message);
+  return new Response(JSON.stringify({ message: error.message }), {
+    status: 500,
+  });
+}
 }
