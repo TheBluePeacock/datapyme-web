@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Encabezado */}
       <header className="bg-gray-100 p-6 shadow-md">
-        <h1 className="text-3xl font-bold">DataPyme</h1>
+        <h1 className="text-3xl font-bold">The Blue Peacock</h1>
         <p className="text-md text-gray-600">
           Soluciones de análisis y automatización para pequeñas empresas
         </p>
